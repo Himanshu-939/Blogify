@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+
+# VS Code settings
+.vscode/
