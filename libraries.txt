@@ -1,0 +1,2 @@
+backend : express, mongoose, nodemon, jsonwebtoken, 
+bcryptjs(used to hash the password)
