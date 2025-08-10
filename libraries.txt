@@ -1,2 +1,6 @@
 backend : express, mongoose, nodemon, jsonwebtoken, 
 bcryptjs(used to hash the password)
+
+frontend : react vite, react-router-dom
+
+shadcn for vite
