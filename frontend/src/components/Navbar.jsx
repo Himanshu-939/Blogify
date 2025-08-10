@@ -26,7 +26,7 @@ const Navbar = () => {
                         />
                         <Button className='absolute right-0 top-0' ><Search /></Button>
                     </div>
-                </div>
+                </div> 
                 {/* nav section */}
                 <div></div>
         </div>
