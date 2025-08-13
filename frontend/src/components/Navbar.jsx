@@ -6,9 +6,14 @@ import { Button } from "./ui/button";
 import { Search } from "lucide-react";
 import { FaMoon } from "react-icons/fa";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { useDispatch, useSelector } from "react-redux";
+import store from "react-redux";
+import { toggleTheme } from "@/redux/themeSlice";
+
 
 const Navbar = () => {
-  const user = true;
+  const {user} = useSelector(store=>store.auth)
+  const dispatch = useDispatch()
   return (
     <div className="py-2 fixed w-full dark:bg-gray-800 dark:border-b-gray-600 border-b-gray-300 border-2 bg-white z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-0">
@@ -51,7 +56,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="flex">
-            <Button>
+            <Button onClick={() => dispatch(toggleTheme())}>
               <FaMoon />
             </Button>
             {user ? (
