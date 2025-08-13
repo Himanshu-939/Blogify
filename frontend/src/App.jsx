@@ -6,6 +6,9 @@ import Login from './pages/Login'
 import Bloggs from './pages/Bloggs'
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import Dashboard from './pages/Dashboard'
+
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -20,6 +23,36 @@ const router = createBrowserRouter([
     element:<><Navbar/><About/></>
 
   },
+
+  {
+    path:"/dashboard",
+    element: <><Navbar/><ProtectedRoute><Dashboard/></ProtectedRoute></>,
+    children:[
+      {
+        path: "write-blog",
+        element:<><CreateBlog/></>
+      },
+      {
+        path: "write-blog/:blogId",
+        element: <><UpdateBlog /></>
+      },
+      {
+        path: "your-blog",
+        element:<YourBlog/>
+      },
+      {
+        path: "comments",
+        element:<Comments/>
+      },
+      {
+        path: "profile",
+        element:<Profile/>
+      },
+      
+      
+    ]
+   },
+
   {
     path:"/login",
     element:<><Navbar/><Login/></>
