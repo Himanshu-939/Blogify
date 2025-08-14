@@ -4,6 +4,7 @@ import cloudinary from "../utils/cloudinary.js";
 import getDataUri from "../utils/dataUri.js";
 
 // Create a new blog post
+
 export const createBlog = async (req,res) => {
     try {
         const {title, category} = req.body;
