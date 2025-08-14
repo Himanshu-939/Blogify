@@ -1,5 +1,7 @@
 backend : express, mongoose, nodemon, jsonwebtoken, 
 bcryptjs(used to hash the password)
+cloudinary, datauri, multer, cookie-parser
+
 
 frontend : react vite, react-router-dom
 
