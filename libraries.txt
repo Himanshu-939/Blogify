@@ -7,3 +7,5 @@ frontend : react vite, react-router-dom
 
 shadcn for vite, react icons, redux, 
 npm redux persist -> do not log out on reload
+
+jodit  editor 
